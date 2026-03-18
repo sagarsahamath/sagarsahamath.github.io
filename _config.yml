@@ -10,13 +10,7 @@ header_pages:
   - publications.md
   - cv.md
 
-plugins:
-  - jekyll-scholar
 
-scholar:
-  style: plain
-  source: ./_bibliography
-  bibliography: papers.bib
 
 author:
   name: Sagar Saha
