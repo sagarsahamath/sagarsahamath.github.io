@@ -1,83 +1,83 @@
+/* GLOBAL */
 body {
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
-  max-width: 1000px;
-  margin: auto;
-  padding: 2rem;
-  line-height: 1.7;
+  background: linear-gradient(120deg, #f5f7fa, #e4ecf7);
   color: #222;
 }
 
-/* Profile section */
-.profile-card {
+/* NAVBAR */
+.navbar {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 30px;
-  margin-bottom: 2rem;
+  padding: 20px 60px;
+  background: #0a192f;
+  color: white;
 }
 
-.profile-img {
-  width: 180px;
-  border-radius: 50%;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+.nav-left {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-/* Cards */
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-top: 1.5rem;
-}
-
-.card {
-  padding: 20px;
-  border-radius: 12px;
-  background: #f9f9f9;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  transition: 0.2s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-/* Links */
-a {
-  color: #0056b3;
+.nav-right a {
+  margin-left: 25px;
   text-decoration: none;
+  color: #ccd6f6;
+  font-weight: 500;
 }
 
-a:hover {
-  text-decoration: underline;
+.nav-right a:hover {
+  color: #64ffda;
 }
 
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121212;
-    color: #e0e0e0;
+/* MAIN CONTAINER */
+.container {
+  padding: 60px;
+}
+
+/* INTRO SECTION */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+/* TEXT */
+.intro-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.email {
+  color: #0077cc;
+  font-weight: 500;
+}
+
+.interest {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* IMAGE */
+.intro-image img {
+  width: 220px;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .card {
-    background: #1e1e1e;
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
   }
-
-  a {
-    color: #4da3ff;
-  }
-}
-
-/* Smooth animations */
-.card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-/* Section spacing */
-section {
-  margin-bottom: 2rem;
 }
