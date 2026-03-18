@@ -3,18 +3,25 @@ layout: page
 title: CV
 ---
 
-📄 Download my CV: [Click here](#)
+📄 **Download CV:** [Click here](/assets/cv.pdf)
 
 ---
 
-### Education
+## Education
 
-- PhD in Mathematics (Expected 2025)  
-- MSc in Mathematics (2017–2019)  
+- PhD in Mathematics (Expected 2025)
+- MSc in Mathematics (2017–2019)
 
 ---
 
-### Research Areas
+## Research Areas
 
 - Combinatorial Group Theory  
-- Automaton Groups  
+- Self-similar groups  
+- Automaton groups  
+
+---
+
+## Academic Activities
+
+- Conferences, talks (add later)
