@@ -3,44 +3,57 @@ layout: home
 title: Home
 ---
 
-<div style="display: flex; align-items: center; gap: 30px;">
+<div class="profile-card">
 
-<img src="/assets/profile.jpg" width="180" style="border-radius: 50%;" />
+<img src="/assets/profile.jpg" class="profile-img">
 
 <div>
 
-# Sagar Saha  
+# Sagar Saha
 
 **PhD in Mathematics**  
 _Combinatorial Group Theory_
 
-📍 Research: Self-similar groups, branch groups, automaton groups  
+📍 Self-similar groups | Branch groups | Automaton groups  
 
 📧 your-email@example.com  
 
-</div>
+<a href="/cv">📄 CV</a> | <a href="/publications">📚 Publications</a>
 
+</div>
 </div>
 
 ---
 
-## About Me
+## Research Overview
 
-I am a PhD researcher working in **combinatorial group theory**, focusing on  
-self-similar and branch groups, with connections to fractal geometry and profinite methods.
+I work in **combinatorial group theory**, focusing on groups acting on rooted trees.  
+My research explores structure, recursion, and connections with fractal geometry and profinite methods.
 
 ---
 
 ## Research Highlights
 
-- Constructed infinite families of non-contracting self-similar groups  
-- Studied congruence subgroup problem and kernels  
-- Analyzed Schreier graphs via recursive structures  
+<div class="card-container">
 
----
+<div class="card">
+<h3>Self-Similar Groups</h3>
+<p>Construction and structural properties of automaton groups.</p>
+</div>
 
-## Current Interests
+<div class="card">
+<h3>Branch Groups</h3>
+<p>Fractal and weakly regular branch properties.</p>
+</div>
 
-- Structure of automaton groups  
-- Length reduction properties  
-- Graph-theoretic aspects of group actions  
+<div class="card">
+<h3>Schreier Graphs</h3>
+<p>Recursive graph structures and growth behavior.</p>
+</div>
+
+<div class="card">
+<h3>Congruence Problem</h3>
+<p>Analysis of rigid and branch kernels.</p>
+</div>
+
+</div>
