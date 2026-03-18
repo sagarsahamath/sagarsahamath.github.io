@@ -1,0 +1,13 @@
+title: Sagar Saha
+description: "PhD student | Combinatorial Group Theory | Automaton Groups"
+baseurl: "" # leave empty for personal site
+url: "https://sagarsahamath.github.io"
+
+theme: minima
+plugins:
+  - jekyll-feed
+
+# optional
+author:
+  name: "Sagar Saha"
+  email: "your-email@example.com"
