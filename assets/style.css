@@ -50,3 +50,34 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  .card {
+    background: #1e1e1e;
+  }
+
+  a {
+    color: #4da3ff;
+  }
+}
+
+/* Smooth animations */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 2rem;
+}
