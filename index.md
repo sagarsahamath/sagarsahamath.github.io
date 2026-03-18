@@ -1,62 +1,46 @@
 ---
-layout: default
+layout: home
 title: Home
 ---
 
-# Sagar Saha
+<div style="display: flex; align-items: center; gap: 30px;">
 
-### PhD in Mathematics  
-_Combinatorial Group Theory | Self-similar & Branch Groups_
+<img src="/assets/profile.jpg" width="180" style="border-radius: 50%;" />
+
+<div>
+
+# Sagar Saha  
+
+**PhD in Mathematics**  
+_Combinatorial Group Theory_
+
+📍 Research: Self-similar groups, branch groups, automaton groups  
+
+📧 your-email@example.com  
+
+</div>
+
+</div>
 
 ---
 
 ## About Me
 
-I am a PhD researcher working in **combinatorial group theory**, with a focus on **self-similar groups, automaton groups, and branch groups**.  
-
-My work explores structural properties, Schreier graphs, and connections with profinite completions and fractal geometry.
-
----
-
-## Research Interests
-
-- Self-similar and automaton groups  
-- Branch groups and fractal properties  
-- Schreier graphs and recursive structures  
-- Congruence subgroup problem  
-- Profinite completions and group actions on trees  
+I am a PhD researcher working in **combinatorial group theory**, focusing on  
+self-similar and branch groups, with connections to fractal geometry and profinite methods.
 
 ---
 
-## Publications
+## Research Highlights
 
-- *Your first paper title*, International Journal of Algebra and Computation  
-- (Add more as you update)
-
----
-
-## Work in Progress
-
-- Length reduction properties in self-similar groups  
-- Structural analysis of recursively defined groups  
+- Constructed infinite families of non-contracting self-similar groups  
+- Studied congruence subgroup problem and kernels  
+- Analyzed Schreier graphs via recursive structures  
 
 ---
 
-## CV
+## Current Interests
 
-📄 [Download my CV](#)
-
----
-
-## Contact
-
-📧 your-email@example.com  
-
----
-
-## Links
-
-- Google Scholar (add later)  
-- GitHub: https://github.com/sagarsahamath  
-
----
+- Structure of automaton groups  
+- Length reduction properties  
+- Graph-theoretic aspects of group actions  
