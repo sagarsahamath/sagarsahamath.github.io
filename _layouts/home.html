@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,178 +17,286 @@
 
     body {
       margin: 0;
-      background: white;
-      color: #333;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.7;
+      background: #ffffff;
+      color: #333333;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Helvetica, Arial, sans-serif;
+      line-height: 1.6;
     }
 
-    /* ---------- NAVIGATION ---------- */
+
+    /* ================= NAVIGATION ================= */
 
     .navbar {
       width: 100%;
-      border-bottom: 1px solid #eeeeee;
       background: #ffffff;
     }
 
     .nav-container {
-      max-width: 1050px;
-      margin: auto;
-      padding: 22px 30px;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 28px 35px;
 
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
     }
 
     .site-name {
-      color: #222;
+      color: #222222;
       text-decoration: none;
-      font-size: 21px;
+      font-size: 20px;
       font-weight: 600;
+      letter-spacing: 0.2px;
     }
 
     .nav-links {
       display: flex;
-      gap: 28px;
+      gap: 30px;
     }
 
     .nav-links a {
-      color: #555;
+      color: #555555;
       text-decoration: none;
       font-size: 15px;
+
+      transition: color 0.2s ease;
     }
 
     .nav-links a:hover {
-      color: #000;
+      color: #000000;
     }
 
 
-    /* ---------- PROFILE ---------- */
+    /* ================= HERO ================= */
 
-    .profile-section {
-      max-width: 950px;
+    .hero {
+      max-width: 1080px;
       margin: 0 auto;
-      padding: 80px 30px;
+      padding: 85px 35px 95px;
 
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      gap: 70px;
+      display: grid;
+      grid-template-columns: 1fr 330px;
+      gap: 90px;
+
+      align-items: center;
     }
 
 
-    /* ---------- PHOTO ---------- */
+    /* ================= INTRODUCTION ================= */
 
-    .profile-image {
-      width: 260px;
-      min-width: 260px;
+    .intro {
+      max-width: 650px;
     }
 
-    .profile-image img {
-      display: block;
-      width: 260px;
-      height: auto;
-      border-radius: 3px;
+    .small-heading {
+      margin: 0 0 18px;
+
+      color: #777777;
+      font-size: 13px;
+      font-weight: 600;
+
+      letter-spacing: 2px;
+      text-transform: uppercase;
     }
 
+    .intro h1 {
+      margin: 0 0 12px;
 
-    /* ---------- INFORMATION ---------- */
+      color: #222222;
 
-    .profile-content {
-      flex: 1;
-      max-width: 600px;
-    }
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 54px;
+      font-weight: 400;
 
-    .profile-content h1 {
-      margin: 0 0 8px;
-      font-size: 42px;
-      font-weight: 500;
-      line-height: 1.2;
-      color: #222;
-    }
-
-    .profile-content p {
-      margin: 0 0 20px;
+      line-height: 1.1;
     }
 
     .position {
-      font-size: 18px;
-      color: #555;
+      margin: 0 0 6px;
+
+      color: #444444;
+      font-size: 20px;
+      font-weight: 400;
     }
 
     .institution {
-      color: #444;
+      margin: 0 0 30px;
+
+      color: #666666;
+      font-size: 16px;
     }
 
-    .profile-content h3 {
-      margin-top: 30px;
-      margin-bottom: 8px;
-      font-size: 19px;
-      color: #222;
-    }
-
-    .research-interests {
-      color: #555;
+    .institution strong {
+      color: #333333;
+      font-weight: 500;
     }
 
 
-    /* ---------- LINKS ---------- */
+    /* ================= SHORT DESCRIPTION ================= */
 
-    .profile-links {
+    .intro-description {
+      max-width: 610px;
+
+      margin: 0 0 25px;
+
+      color: #555555;
+
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+
+    /* ================= RESEARCH INTERESTS ================= */
+
+    .research-line {
+      margin-top: 28px;
+
+      padding-left: 18px;
+
+      border-left: 2px solid #dddddd;
+
+      color: #555555;
+
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .research-line strong {
+      display: block;
+
+      margin-bottom: 4px;
+
+      color: #333333;
+
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+
+    /* ================= PHOTO ================= */
+
+    .photo-container {
+      position: relative;
+
+      width: 320px;
+      height: 390px;
+    }
+
+    .photo-container::before {
+      content: "";
+
+      position: absolute;
+
+      top: 18px;
+      left: 18px;
+
+      width: 100%;
+      height: 100%;
+
+      border: 1px solid #dddddd;
+
+      z-index: 0;
+    }
+
+    .profile-photo {
+      position: relative;
+
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      display: block;
+
+      z-index: 1;
+    }
+
+
+    /* ================= ACADEMIC LINKS ================= */
+
+    .academic-links {
       display: flex;
       flex-wrap: wrap;
+
       gap: 22px;
-      margin-top: 28px;
+
+      margin-top: 32px;
     }
 
-    .profile-links a {
-      color: #333;
+    .academic-links a {
+      color: #333333;
+
       text-decoration: none;
-      border-bottom: 1px solid #aaa;
+
+      font-size: 15px;
+
+      border-bottom: 1px solid #bbbbbb;
+
       padding-bottom: 2px;
+
+      transition: all 0.2s ease;
     }
 
-    .profile-links a:hover {
-      color: #000;
-      border-bottom-color: #000;
+    .academic-links a:hover {
+      color: #000000;
+
+      border-bottom-color: #000000;
     }
 
 
-    /* ---------- MOBILE ---------- */
+    /* ================= SUBTLE DIVIDER ================= */
 
-    @media (max-width: 700px) {
+    .bottom-line {
+      max-width: 1080px;
+
+      margin: 0 auto;
+
+      padding: 0 35px;
+    }
+
+    .bottom-line div {
+      border-top: 1px solid #eeeeee;
+    }
+
+
+    /* ================= MOBILE ================= */
+
+    @media (max-width: 800px) {
 
       .nav-container {
-        padding: 18px 22px;
+        padding: 22px 25px;
+
         flex-direction: column;
         align-items: flex-start;
-        gap: 15px;
-      }
 
-      .nav-links {
-        flex-wrap: wrap;
         gap: 18px;
       }
 
-      .profile-section {
-        flex-direction: column;
-        gap: 35px;
-        padding: 55px 25px;
+      .nav-links {
+        gap: 20px;
+        flex-wrap: wrap;
       }
 
-      .profile-image {
-        width: 220px;
-        min-width: 220px;
+      .hero {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        padding: 55px 25px 70px;
       }
 
-      .profile-image img {
-        width: 220px;
+      .photo-container {
+        order: -1;
+
+        width: 240px;
+        height: 300px;
       }
 
-      .profile-content h1 {
-        font-size: 34px;
+      .intro h1 {
+        font-size: 43px;
       }
+
     }
 
   </style>
@@ -196,13 +305,15 @@
 
 <body>
 
+  <!-- ================= NAVIGATION ================= -->
+
   <nav class="navbar">
 
-
+```
 <div class="nav-container">
 
   <a href="/" class="site-name">
-    <h1>Sagar Saha</h1>
+    Sagar Saha
   </a>
 
   <div class="nav-links">
@@ -220,63 +331,97 @@
   </div>
 
 </div>
-
+```
 
   </nav>
 
-  <main class="profile-section">
+  <!-- ================= HERO ================= -->
 
+  <main class="hero">
 
-<div class="profile-image">
+```
+<!-- INTRODUCTION -->
 
-  <img
-    src="/assets/IMG-20260713-WA0144.jpg"
-    alt="Sagar Saha">
+<div class="intro">
 
-</div>
-
-
-<div class="profile-content">
-
-  
-
-  <p>
-    I am a PhD researcher working in group theory. My research
-    interests include self-similar groups, branch groups,
-    automaton groups, and groups acting on rooted trees.
+  <p class="small-heading">
+    Mathematician · Group Theory
   </p>
 
-  <p>
-    I am interested in understanding the algebraic and structural
-    properties of infinite groups through recursive and geometric
-    methods.
+  <h1>
+    Sagar Saha
+  </h1>
+
+  <p class="position">
+    Research Associate
   </p>
 
-  <h3>Research Interests</h3>
+  <p class="institution">
+    Indian Institute of Science Education and Research
+    <strong>Thiruvananthapuram</strong>
+  </p>
 
-  <p class="research-interests">
+  <p class="intro-description">
+    I am a mathematician working in group theory, with interests
+    in self-similar groups, branch groups, automaton groups,
+    and groups acting on rooted trees.
+  </p>
+
+
+  <div class="research-line">
+
+    <strong>
+      Research Interests
+    </strong>
+
     Self-Similar Groups · Branch Groups · Automaton Groups ·
-    Groups Acting on Rooted Trees · Profinite Groups
-  </p>
+    Groups Acting on Rooted Trees · Geometric Group Theory ·
+    Profinite Groups
 
-  <div class="profile-links">
+  </div>
 
-    <a href="mailto:your-email@example.com">Email</a>
 
-    <a href="https://github.com/sagarsahamath" target="_blank">
+  <div class="academic-links">
+
+    <a href="mailto:your-email@example.com">
+      Email
+    </a>
+
+    <a href="https://github.com/sagarsahamath"
+       target="_blank">
       GitHub
     </a>
 
-    <a href="#">Google Scholar</a>
+    <a href="#">
+      Google Scholar
+    </a>
 
-    <a href="/cv">CV</a>
+    <a href="/cv">
+      CV
+    </a>
 
   </div>
 
 </div>
 
 
+<!-- PROFILE PHOTO -->
+
+<div class="photo-container">
+
+  <img
+    class="profile-photo"
+    src="/assets/IMG-20260713-WA0144.jpg"
+    alt="Sagar Saha">
+
+</div>
+```
+
   </main>
+
+  <div class="bottom-line">
+    <div></div>
+  </div>
 
 </body>
 
