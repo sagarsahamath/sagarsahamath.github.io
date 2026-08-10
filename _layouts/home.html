@@ -120,75 +120,90 @@
        ===================================================== */
 
     .hero {
-      position: relative;
+position: relative;
 
-      min-height: calc(100vh - 78px);
+min-height: calc(100vh - 78px);
 
-      overflow: hidden;
+overflow: hidden;
 
-      background-color: #f7f3eb;
+background: #f7f3eb;
+}
 
-      background-image:
-        linear-gradient(
-          90deg,
-          rgba(247,243,235,0.96) 0%,
-          rgba(247,243,235,0.91) 32%,
-          rgba(247,243,235,0.62) 58%,
-          rgba(247,243,235,0.18) 100%
-        ),
-        url("/assets/background.png");
+/* Mathematical background stays on the RIGHT */
 
-      background-size: cover;
+.hero::after {
+content: "";
 
-      background-position: center center;
+position: absolute;
 
-      background-repeat: no-repeat;
-    }
+top: 0;
+right: 0;
+bottom: 0;
 
+width: 48%;
 
-    /* Very subtle ivory overlay */
+background-image:
+linear-gradient(
+90deg,
+rgba(247,243,235,0.15) 0%,
+rgba(247,243,235,0.00) 35%
+),
+url("/assets/math-background.png");
 
-    .hero::before {
-      content: "";
+background-size: cover;
+background-position: center right;
+background-repeat: no-repeat;
 
-      position: absolute;
+z-index: 0;
 
-      inset: 0;
+pointer-events: none;
+}
 
-      background:
-        radial-gradient(
-          circle at 15% 25%,
-          rgba(255,255,255,0.40),
-          transparent 35%
-        );
+/* Very soft transition between text area and artwork */
 
-      pointer-events: none;
-    }
+.hero::before {
+content: "";
 
+position: absolute;
 
-    /* =====================================================
-       HERO CONTENT
-       ===================================================== */
+top: 0;
+left: 45%;
+bottom: 0;
 
-    .hero-container {
-      position: relative;
+width: 18%;
 
-      z-index: 2;
+background: linear-gradient(
+90deg,
+#f7f3eb 0%,
+rgba(247,243,235,0.92) 45%,
+rgba(247,243,235,0) 100%
+);
 
-      max-width: 1120px;
+z-index: 1;
 
-      min-height: calc(100vh - 78px);
+pointer-events: none;
+}
 
-      margin: 0 auto;
+.hero-container {
+position: relative;
 
-      padding: 75px 38px 90px;
+z-index: 2;
 
-      display: flex;
+max-width: 1120px;
 
-      align-items: center;
+min-height: calc(100vh - 78px);
 
-      gap: 52px;
-    }
+margin: 0 auto;
+
+padding: 75px 38px 90px;
+
+display: flex;
+
+align-items: center;
+
+gap: 45px;
+}
+
 
 
     /* =====================================================
