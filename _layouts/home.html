@@ -1,15 +1,9 @@
----
-
-## layout: null
-
 <!DOCTYPE html>
 
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Sagar Saha | Mathematics</title>
@@ -20,22 +14,15 @@
       box-sizing: border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
       margin: 0;
-      padding: 0;
-      background: #ffffff;
-      color: #333333;
+      background: white;
+      color: #333;
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 16px;
       line-height: 1.7;
     }
 
-
-    /* ================= NAVIGATION ================= */
+    /* ---------- NAVIGATION ---------- */
 
     .navbar {
       width: 100%;
@@ -45,7 +32,7 @@
 
     .nav-container {
       max-width: 1050px;
-      margin: 0 auto;
+      margin: auto;
       padding: 22px 30px;
 
       display: flex;
@@ -54,7 +41,7 @@
     }
 
     .site-name {
-      color: #222222;
+      color: #222;
       text-decoration: none;
       font-size: 21px;
       font-weight: 600;
@@ -63,26 +50,25 @@
     .nav-links {
       display: flex;
       gap: 28px;
-      align-items: center;
     }
 
     .nav-links a {
-      color: #555555;
+      color: #555;
       text-decoration: none;
       font-size: 15px;
     }
 
     .nav-links a:hover {
-      color: #000000;
+      color: #000;
     }
 
 
-    /* ================= PROFILE ================= */
+    /* ---------- PROFILE ---------- */
 
     .profile-section {
       max-width: 950px;
       margin: 0 auto;
-      padding: 85px 30px;
+      padding: 80px 30px;
 
       display: flex;
       flex-direction: row;
@@ -91,11 +77,11 @@
     }
 
 
-    /* ================= PHOTO ================= */
+    /* ---------- PHOTO ---------- */
 
     .profile-image {
-      flex: 0 0 260px;
       width: 260px;
+      min-width: 260px;
     }
 
     .profile-image img {
@@ -106,21 +92,19 @@
     }
 
 
-    /* ================= DETAILS ================= */
+    /* ---------- INFORMATION ---------- */
 
     .profile-content {
       flex: 1;
-      min-width: 0;
       max-width: 600px;
     }
 
     .profile-content h1 {
       margin: 0 0 8px;
-
-      color: #222222;
       font-size: 42px;
       font-weight: 500;
       line-height: 1.2;
+      color: #222;
     }
 
     .profile-content p {
@@ -128,61 +112,56 @@
     }
 
     .position {
-      color: #555555;
       font-size: 18px;
+      color: #555;
     }
 
     .institution {
-      color: #444444;
+      color: #444;
     }
 
     .profile-content h3 {
-      margin-top: 32px;
+      margin-top: 30px;
       margin-bottom: 8px;
-
-      color: #222222;
       font-size: 19px;
-      font-weight: 600;
+      color: #222;
     }
 
     .research-interests {
-      color: #555555;
+      color: #555;
     }
 
 
-    /* ================= LINKS ================= */
+    /* ---------- LINKS ---------- */
 
     .profile-links {
       display: flex;
       flex-wrap: wrap;
       gap: 22px;
-      margin-top: 30px;
+      margin-top: 28px;
     }
 
     .profile-links a {
-      color: #333333;
+      color: #333;
       text-decoration: none;
-
-      border-bottom: 1px solid #aaaaaa;
+      border-bottom: 1px solid #aaa;
       padding-bottom: 2px;
     }
 
     .profile-links a:hover {
-      color: #000000;
-      border-bottom-color: #000000;
+      color: #000;
+      border-bottom-color: #000;
     }
 
 
-    /* ================= MOBILE ================= */
+    /* ---------- MOBILE ---------- */
 
     @media (max-width: 700px) {
 
       .nav-container {
         padding: 18px 22px;
-
         flex-direction: column;
         align-items: flex-start;
-
         gap: 15px;
       }
 
@@ -194,12 +173,12 @@
       .profile-section {
         flex-direction: column;
         gap: 35px;
-        padding: 55px 25px 70px;
+        padding: 55px 25px;
       }
 
       .profile-image {
         width: 220px;
-        flex-basis: auto;
+        min-width: 220px;
       }
 
       .profile-image img {
@@ -209,7 +188,6 @@
       .profile-content h1 {
         font-size: 34px;
       }
-
     }
 
   </style>
@@ -283,9 +261,7 @@
     methods.
   </p>
 
-  <h3>
-    Research Interests
-  </h3>
+  <h3>Research Interests</h3>
 
   <p class="research-interests">
     Self-Similar Groups · Branch Groups · Automaton Groups ·
@@ -294,21 +270,15 @@
 
   <div class="profile-links">
 
-    <a href="mailto:your-email@example.com">
-      Email
-    </a>
+    <a href="mailto:your-email@example.com">Email</a>
 
     <a href="https://github.com/sagarsahamath" target="_blank">
       GitHub
     </a>
 
-    <a href="#">
-      Google Scholar
-    </a>
+    <a href="#">Google Scholar</a>
 
-    <a href="/cv">
-      CV
-    </a>
+    <a href="/cv">CV</a>
 
   </div>
 
