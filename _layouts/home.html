@@ -119,89 +119,392 @@
        HERO
        ===================================================== */
 
-    .hero {
+   /* =====================================================
+HERO SECTION
+===================================================== */
+
+.hero {
 position: relative;
 
 min-height: calc(100vh - 78px);
 
 overflow: hidden;
 
-background: #f7f3eb;
-}
-
-/* Mathematical background stays on the RIGHT */
-
-.hero::after {
-content: "";
-
-position: absolute;
-
-top: 0;
-right: 0;
-bottom: 0;
-
-width: 48%;
+background-color: #f7f3eb;
 
 background-image:
 linear-gradient(
 90deg,
-rgba(247,243,235,0.15) 0%,
-rgba(247,243,235,0.00) 35%
+rgba(247,243,235,0.96) 0%,
+rgba(247,243,235,0.90) 35%,
+rgba(247,243,235,0.70) 60%,
+rgba(247,243,235,0.28) 100%
 ),
-url("/assets/background.png");
+url("/assets/math-background.png");
 
 background-size: cover;
-background-position: center right;
+
+background-position: center center;
+
 background-repeat: no-repeat;
-
-z-index: 0;
-
-pointer-events: none;
 }
 
-/* Very soft transition between text area and artwork */
-
-.hero::before {
-content: "";
-
-position: absolute;
-
-top: 0;
-left: 45%;
-bottom: 0;
-
-width: 18%;
-
-background: linear-gradient(
-90deg,
-#f7f3eb 0%,
-rgba(247,243,235,0.92) 45%,
-rgba(247,243,235,0) 100%
-);
-
-z-index: 1;
-
-pointer-events: none;
-}
+/* =====================================================
+HERO CONTAINER
+===================================================== */
 
 .hero-container {
+
 position: relative;
 
 z-index: 2;
 
-max-width: 1120px;
+max-width: 1150px;
 
 min-height: calc(100vh - 78px);
 
 margin: 0 auto;
 
-padding: 75px 38px 90px;
+padding: 70px 38px 85px;
 
 display: flex;
 
 align-items: center;
 
-gap: 45px;
+gap: 42px;
+}
+
+/* =====================================================
+PROFILE PHOTO
+===================================================== */
+
+.photo-area {
+
+position: relative;
+
+flex: 0 0 230px;
+
+width: 230px;
+
+height: 305px;
+
+}
+
+/* Elegant offset frame */
+
+.photo-area::before {
+
+content: "";
+
+position: absolute;
+
+top: 13px;
+
+left: 13px;
+
+width: 100%;
+
+height: 100%;
+
+border: 1px solid rgba(42, 68, 86, 0.25);
+
+z-index: 0;
+}
+
+.profile-photo {
+
+position: relative;
+
+z-index: 1;
+
+display: block;
+
+width: 100%;
+
+height: 100%;
+
+object-fit: cover;
+
+background: #e9e4da;
+
+box-shadow:
+0 8px 25px rgba(35, 52, 64, 0.10);
+}
+
+/* =====================================================
+DETAILS
+===================================================== */
+
+.hero-content {
+
+width: 520px;
+
+max-width: 520px;
+
+flex: 0 0 520px;
+
+padding-bottom: 5px;
+}
+
+/* small gold accent */
+
+.gold-line {
+
+width: 42px;
+
+height: 2px;
+
+margin-bottom: 20px;
+
+background: #b79455;
+}
+
+.hero-content h1 {
+
+margin: 0 0 10px;
+
+color: #203d52;
+
+font-family:
+Georgia,
+"Times New Roman",
+serif;
+
+font-size: 54px;
+
+font-weight: 400;
+
+line-height: 1.08;
+
+letter-spacing: -0.8px;
+}
+
+.position {
+
+margin: 0 0 4px;
+
+color: #334f63;
+
+font-size: 20px;
+
+font-weight: 400;
+}
+
+.institution {
+
+margin: 0 0 27px;
+
+color: #61717c;
+
+font-size: 16px;
+
+line-height: 1.7;
+}
+
+.institution strong {
+
+color: #38566b;
+
+font-weight: 500;
+}
+
+/* =====================================================
+RESEARCH INTERESTS
+===================================================== */
+
+.research-box {
+
+margin-top: 24px;
+
+padding: 15px 20px;
+
+border-left: 2px solid #b79455;
+
+background: rgba(255,255,255,0.38);
+
+backdrop-filter: blur(4px);
+
+max-width: 500px;
+}
+
+.research-title {
+
+margin: 0 0 5px;
+
+color: #304d61;
+
+font-size: 12px;
+
+font-weight: 600;
+
+letter-spacing: 1.4px;
+
+text-transform: uppercase;
+}
+
+.research-box p:last-child {
+
+margin: 0;
+
+color: #536673;
+
+font-size: 14.5px;
+
+line-height: 1.8;
+}
+
+/* =====================================================
+LINKS
+===================================================== */
+
+.academic-links {
+
+display: flex;
+
+flex-wrap: wrap;
+
+gap: 21px;
+
+margin-top: 27px;
+}
+
+.academic-links a {
+
+color: #315269;
+
+text-decoration: none;
+
+font-size: 14.5px;
+
+padding-bottom: 2px;
+
+border-bottom: 1px solid #a9a08f;
+
+transition:
+color 0.25s ease,
+border-color 0.25s ease;
+}
+
+.academic-links a:hover {
+
+color: #172f40;
+
+border-bottom-color: #b79455;
+}
+
+/* =====================================================
+MOBILE
+===================================================== */
+
+@media (max-width: 850px) {
+
+.hero {
+
+```
+min-height: auto;
+
+background-image:
+  linear-gradient(
+    rgba(247,243,235,0.88),
+    rgba(247,243,235,0.94)
+  ),
+  url("/assets/math-background.png");
+
+background-position: center;
+```
+
+}
+
+.hero-container {
+
+```
+min-height: auto;
+
+padding: 55px 25px 70px;
+
+flex-direction: column;
+
+align-items: flex-start;
+
+gap: 42px;
+```
+
+}
+
+.photo-area {
+
+```
+width: 215px;
+
+height: 285px;
+
+flex-basis: 285px;
+```
+
+}
+
+.hero-content {
+
+```
+width: 100%;
+
+max-width: 570px;
+
+flex: none;
+```
+
+}
+
+.hero-content h1 {
+
+```
+font-size: 44px;
+```
+
+}
+
+}
+
+@media (max-width: 480px) {
+
+.hero-container {
+
+```
+padding-left: 21px;
+
+padding-right: 21px;
+```
+
+}
+
+.photo-area {
+
+```
+width: 195px;
+
+height: 260px;
+
+flex-basis: 260px;
+```
+
+}
+
+.hero-content h1 {
+
+```
+font-size: 39px;
+```
+
+}
+
+.position {
+
+```
+font-size: 18px;
+```
+
+}
+
 }
 
 
