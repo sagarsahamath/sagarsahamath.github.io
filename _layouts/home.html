@@ -126,7 +126,9 @@ HERO SECTION
 .hero {
 position: relative;
 
-min-height: calc(100vh - 78px);
+width: 100%;
+
+min-height: 720px;
 
 overflow: hidden;
 
@@ -134,20 +136,21 @@ background-color: #f7f3eb;
 
 background-image:
 linear-gradient(
-90deg,
-rgba(247,243,235,0.96) 0%,
-rgba(247,243,235,0.90) 35%,
-rgba(247,243,235,0.70) 60%,
-rgba(247,243,235,0.28) 100%
+rgba(247,243,235,0.10),
+rgba(247,243,235,0.10)
 ),
 url("/assets/math-background.png");
 
-background-size: cover;
+/* IMPORTANT:
+Show the complete background image.
+Do NOT crop it with cover. */
+background-size: 100% 100%;
 
 background-position: center center;
 
 background-repeat: no-repeat;
 }
+
 
 /* =====================================================
 HERO CONTAINER
