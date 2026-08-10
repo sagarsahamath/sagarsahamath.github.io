@@ -1,3 +1,233 @@
+/* ================================
+GENERAL
+================================ */
+
+* {
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+margin: 0;
+background: #ffffff;
+color: #333333;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+line-height: 1.7;
+}
+
+/* ================================
+NAVIGATION
+================================ */
+
+.navbar {
+width: 100%;
+background: #ffffff;
+border-bottom: 1px solid #eeeeee;
+}
+
+.nav-container {
+max-width: 1050px;
+margin: 0 auto;
+padding: 22px 30px;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.site-name {
+color: #222222;
+text-decoration: none;
+font-size: 21px;
+font-weight: 600;
+}
+
+.nav-links {
+display: flex;
+align-items: center;
+gap: 28px;
+}
+
+.nav-links a {
+color: #555555;
+text-decoration: none;
+font-size: 15px;
+}
+
+.nav-links a:hover {
+color: #000000;
+}
+
+/* ================================
+MAIN PROFILE
+================================ */
+
+.profile-section {
+max-width: 950px;
+margin: 0 auto;
+
+padding: 80px 30px;
+
+/* PHOTO LEFT + DETAILS RIGHT */
+display: grid;
+grid-template-columns: 260px minmax(0, 1fr);
+
+column-gap: 70px;
+
+align-items: start;
+}
+
+/* ================================
+PHOTO
+================================ */
+
+.profile-image {
+width: 260px;
+}
+
+.profile-image img {
+display: block;
+
+width: 260px;
+height: auto;
+
+border-radius: 3px;
+
+object-fit: cover;
+}
+
+/* ================================
+PROFILE DETAILS
+================================ */
+
+.profile-content {
+max-width: 600px;
+}
+
+.profile-content h1 {
+margin: 0 0 8px;
+
+color: #222222;
+
+font-size: 42px;
+font-weight: 500;
+
+line-height: 1.2;
+}
+
+.profile-content p {
+margin: 0 0 20px;
+}
+
+.position {
+color: #555555;
+font-size: 18px;
+margin-bottom: 5px !important;
+}
+
+.institution {
+color: #444444;
+}
+
+/* ================================
+RESEARCH INTERESTS
+================================ */
+
+.profile-content h3 {
+margin-top: 30px;
+margin-bottom: 8px;
+
+color: #222222;
+
+font-size: 19px;
+font-weight: 600;
+}
+
+.research-interests {
+color: #555555;
+}
+
+/* ================================
+LINKS
+================================ */
+
+.profile-links {
+display: flex;
+flex-wrap: wrap;
+gap: 22px;
+
+margin-top: 28px;
+}
+
+.profile-links a {
+color: #333333;
+
+text-decoration: none;
+
+border-bottom: 1px solid #aaaaaa;
+
+padding-bottom: 2px;
+
+transition: 0.2s ease;
+}
+
+.profile-links a:hover {
+color: #000000;
+border-bottom-color: #000000;
+}
+
+/* ================================
+MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+.nav-container {
+padding: 18px 22px;
+
+```
+flex-direction: column;
+align-items: flex-start;
+
+gap: 15px;
+```
+
+}
+
+.nav-links {
+gap: 18px;
+flex-wrap: wrap;
+}
+
+.profile-section {
+
+```
+grid-template-columns: 1fr;
+
+row-gap: 35px;
+
+padding: 55px 25px;
+```
+
+}
+
+.profile-image {
+width: 220px;
+}
+
+.profile-image img {
+width: 220px;
+}
+
+.profile-content h1 {
+font-size: 34px;
+}
+
+}
 /* =========================================================
 SAGAR SAHA — ACADEMIC WEBSITE
 ========================================================= */
