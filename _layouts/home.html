@@ -1,105 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{{ site.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ==================== HERO / INTRODUCTION ==================== -->
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="/assets/style.css">
-</head>
+<section class="intro-section">
 
-<body>
+  <!-- LEFT SIDE: ACADEMIC INTRODUCTION -->
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <div class="nav-left">Sagar Saha</div>
-  <div class="nav-right">
-    <a href="/research">Research</a>
-    <a href="/conferences">Conferences</a>
-    <a href="/teaching">Teaching</a>
-    <a href="/achievements">Achievements</a>
-    <a href="/more">More</a>
-  </div>
-</nav>
+  <div class="intro-text">
 
-<!-- MAIN CONTAINER -->
-<div class="container">
+```
+<p class="intro-label fade-in">MATHEMATICIAN & RESEARCHER</p>
 
-  <!-- INTRO SECTION -->
-  <div class="intro">
+<h1 class="fade-in">Sagar Saha</h1>
 
-    <!-- LEFT SIDE -->
-    <div class="intro-text">
+<p id="typing" class="typing"></p>
 
-      <h1 class="fade-in">Sagar Saha</h1>
+<p class="academic-position fade-in">
+  PhD Researcher in Mathematics
+</p>
 
-      <p id="typing" class="typing"></p>
+<p class="institution fade-in">
+  <strong>Indian Institute of Technology Guwahati</strong>
+</p>
 
-      <p class="email fade-in">📧 your-email@example.com</p>
+<p class="supervisor fade-in">
+  Working under the supervision of
+  <strong>Prof. [Supervisor Name]</strong>
+</p>
 
-      <p class="fade-in">
-        PhD Student in Mathematics,<br>
-        <strong>IIT Guwahati</strong><br>
-        Under the supervision of <strong>Prof. Your Supervisor</strong>
-      </p>
+<div class="contact-links fade-in">
+  <a href="mailto:your-email@example.com">📧 Email</a>
+  <a href="https://github.com/sagarsahamath" target="_blank">GitHub</a>
+  <a href="#">Google Scholar</a>
+  <a href="#">CV</a>
+</div>
 
-      <p class="interest fade-in">
-        <strong>Research Interests:</strong> 
-        Self-similar groups, branch groups, automaton groups
-      </p>
-
-    </div>
-
-    <!-- RIGHT SIDE IMAGE -->
-    <div class="intro-image fade-in">
-      <img src="/assets/profile.jpg" alt="Profile Photo">
-    </div>
+<div class="research-summary fade-in">
+  <h3>Research Interests</h3>
+  <p>
+    My research focuses on the algebraic, geometric, and dynamical
+    aspects of infinite groups, with particular interest in
+    self-similar groups, branch groups, automaton groups, and
+    related problems in group theory.
+  </p>
+</div>
+```
 
   </div>
 
-  <!-- HIGHLIGHT SECTION -->
-  <div class="highlight fade-in">
+  <!-- RIGHT SIDE: PROFILE IMAGE -->
+
+  <div class="intro-image fade-in">
+    <div class="image-wrapper">
+      <img src="/assets/profile.jpg" alt="Portrait of Sagar Saha">
+    </div>
+  </div>
+
+</section>
+
+<!-- ==================== RESEARCH HIGHLIGHTS ==================== -->
+
+<section class="research-section">
+
+  <div class="section-heading fade-in">
+    <p class="section-label">RESEARCH</p>
+    <h2>Research Highlights</h2>
     <p>
-      Exploring the structure of <strong>self-similar groups</strong> and 
-      their connections with <strong>fractal geometry</strong> and 
-      <strong>graph theory</strong>.
+      Selected areas and problems that motivate my current research.
     </p>
   </div>
 
-  <!-- SELECTED WORK -->
-  <div class="fade-in" style="margin-top:50px;">
-    <h2>Selected Work</h2>
+  <div class="card-container">
 
-    <div class="card-container">
-
-      <div class="card">
-        <h3>Self-Similar Groups</h3>
-        <p>Constructed infinite families with new structural properties.</p>
-      </div>
-
-      <div class="card">
-        <h3>Branch Groups</h3>
-        <p>Studied fractal and weakly regular branch properties.</p>
-      </div>
-
-      <div class="card">
-        <h3>Schreier Graphs</h3>
-        <p>Developed recursive constructions using cycle merging.</p>
-      </div>
-
-      <div class="card">
-        <h3>Congruence Problem</h3>
-        <p>Analyzed rigid and branch kernels with infinite behavior.</p>
-      </div>
-
-    </div>
-  </div>
-
+```
+<div class="card fade-in">
+  <span class="card-number">01</span>
+  <h3>Self-Similar Groups</h3>
+  <p>
+    Investigating recursively defined groups and constructing
+    infinite families with distinctive algebraic and structural
+    properties.
+  </p>
 </div>
 
-<!-- JS -->
-<script src="/assets/script.js"></script>
+<div class="card fade-in">
+  <span class="card-number">02</span>
+  <h3>Branch Groups</h3>
+  <p>
+    Studying branch and weakly branch structures, fractal behaviour,
+    and the rich subgroup geometry arising from actions on rooted trees.
+  </p>
+</div>
 
-</body>
-</html>
+<div class="card fade-in">
+  <span class="card-number">03</span>
+  <h3>Schreier Graphs</h3>
+  <p>
+    Exploring recursive graph constructions and structural phenomena
+    associated with group actions and cycle merging.
+  </p>
+</div>
+
+<div class="card fade-in">
+  <span class="card-number">04</span>
+  <h3>Congruence Problem</h3>
+  <p>
+    Investigating congruence subgroup phenomena, including the
+    structure and behaviour of branch and rigid kernels.
+  </p>
+</div>
+```
+
+  </div>
+
+</section>
