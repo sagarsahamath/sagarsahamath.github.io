@@ -4,49 +4,32 @@
 
 <head>
   <meta charset="UTF-8">
-
-<meta name="viewport"
-     content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Sagar Saha | Mathematics</title>
 
   <link rel="stylesheet"
         href="{{ '/assets/style.css' | relative_url }}">
-
 </head>
 
 <body>
 
-  <!-- ===================== NAVIGATION ===================== -->
+  <!-- NAVIGATION -->
 
   <nav class="navbar">
+    <div class="nav-container">
 
 ```
-<div class="nav-container">
-
-  <a href="{{ '/' | relative_url }}"
-     class="site-name">
+  <a href="{{ '/' | relative_url }}" class="site-name">
     Sagar Saha
   </a>
 
   <div class="nav-links">
-
-    <a href="{{ '/research' | relative_url }}">
-      Research
-    </a>
-
-    <a href="{{ '/publications' | relative_url }}">
-      Publications
-    </a>
-
-    <a href="{{ '/conferences' | relative_url }}">
-      Activities
-    </a>
-
-    <a href="{{ '/cv' | relative_url }}">
-      CV
-    </a>
-
+    <a href="{{ '/about' | relative_url }}">About</a>
+    <a href="{{ '/research' | relative_url }}">Research</a>
+    <a href="{{ '/publications' | relative_url }}">Publications</a>
+    <a href="{{ '/conferences' | relative_url }}">Activities</a>
+    <a href="{{ '/cv' | relative_url }}">CV</a>
   </div>
 
 </div>
@@ -54,23 +37,19 @@
 
   </nav>
 
-  <!-- ===================== MAIN PROFILE ===================== -->
+  <!-- MAIN PROFILE -->
 
   <main class="profile-section">
 
 ```
-<!-- PROFILE PHOTO -->
-
+<!-- LEFT: PHOTO -->
 <div class="profile-image">
-
   <img src="{{ '/assets/IMG-20260713-WA0144.jpg' | relative_url }}"
        alt="Sagar Saha">
-
 </div>
 
 
-<!-- PROFILE INFORMATION -->
-
+<!-- RIGHT: DETAILS -->
 <div class="profile-content">
 
   <h1>Sagar Saha</h1>
@@ -79,12 +58,10 @@
     PhD Researcher in Mathematics
   </p>
 
-
-  <p>
+  <p class="institution">
     Department of Mathematics<br>
     <strong>Indian Institute of Technology Guwahati</strong>
   </p>
-
 
   <p>
     I am a PhD researcher working in group theory. My research
@@ -92,15 +69,11 @@
     automaton groups, and groups acting on rooted trees.
   </p>
 
-
   <p>
     I am interested in understanding the algebraic and structural
     properties of infinite groups through recursive and geometric
     methods.
   </p>
-
-
-  <!-- RESEARCH INTERESTS -->
 
   <h3>Research Interests</h3>
 
@@ -109,27 +82,18 @@
     Groups Acting on Rooted Trees · Profinite Groups
   </p>
 
-
-  <!-- ACADEMIC LINKS -->
-
   <div class="profile-links">
 
-    <a href="mailto:your-email@example.com">
-      Email
-    </a>
+    <a href="mailto:your-email@example.com">Email</a>
 
     <a href="https://github.com/sagarsahamath"
        target="_blank">
       GitHub
     </a>
 
-    <a href="#">
-      Google Scholar
-    </a>
+    <a href="#">Google Scholar</a>
 
-    <a href="{{ '/cv' | relative_url }}">
-      CV
-    </a>
+    <a href="{{ '/cv' | relative_url }}">CV</a>
 
   </div>
 
@@ -138,10 +102,5 @@
 
   </main>
 
-  <!-- ===================== JAVASCRIPT ===================== -->
-
-  <script src="{{ '/assets/script.js' | relative_url }}"></script>
-
 </body>
-
 </html>
