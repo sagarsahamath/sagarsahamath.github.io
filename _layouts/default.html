@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title and page.title != 'Home' %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="navbar">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a class="site-name" href="{{ '/' | relative_url }}">Sagar Saha</a>
+      <div class="nav-links">
+        {% assign links = 'About:/about.html,Research:/research.html,Publications:/publications.html,Activities:/conferences.html,Teaching:/teaching.html,Awards:/achievements.html,CV:/cv.html' | split: ',' %}
+        {% for item in links %}{% assign link = item | split: ':' %}
+        <a href="{{ link[1] | relative_url }}"{% if page.url == link[1] %} aria-current="page"{% endif %}>{{ link[0] }}</a>
+        {% endfor %}
+      </div>
+    </nav>
+  </header>
+  {{ content }}
+  <footer class="site-footer">
+    <span>Sagar Saha · IISER Mohali</span>
+    <a href="mailto:{{ site.author.email }}">Email</a>
+    <a href="https://orcid.org/0009-0006-9975-1075">ORCID</a>
+    <a href="https://github.com/sagarsahamath">GitHub</a>
+  </footer>
+</body>
+</html>

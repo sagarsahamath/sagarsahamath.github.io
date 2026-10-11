@@ -1,16 +1,8 @@
 title: Sagar Saha
-description: PhD in Mathematics | Combinatorial Group Theory
+description: National Postdoctoral Fellow at IISER Mohali | Branch groups and geometric group theory
 url: https://sagarsahamath.github.io
 baseurl: ""
-
 theme: minima
-
-header_pages:
-  - research.md
-  - publications.md
-  - cv.md
-
-
-
 author:
   name: Sagar Saha
+  email: ssgarsaha.ss@gmail.com
