@@ -4,34 +4,44 @@ layout: default
 <main id="main-content">
   <section class="hero" aria-labelledby="profile-name">
     <div class="hero-container">
-      <div class="photo-area">
-        <img class="profile-photo" src="{{ '/assets/IMG-20260713-WA0144.jpg' | relative_url }}" alt="Sagar Saha">
-      </div>
       <div class="hero-content">
-        <div class="gold-line"></div>
-        <p class="eyebrow">Mathematics · Group theory</p>
-        <h1 id="profile-name">Sagar Saha</h1>
-        <p class="position">National Postdoctoral Fellow (NPDF)</p>
-        <p class="institution">Indian Institute of Science Education and Research<br><strong>Mohali</strong></p>
-        <p>Working with Prof. Mahender Singh since September 2026.</p>
-        <div class="research-box">
-          <h2>Research interests</h2>
-          <p>Branch groups · Groups acting on rooted trees · Self-similar and automata groups · Combinatorial and geometric group theory</p>
-        </div>
-        <p class="intro">I study the structure of branch groups and groups acting on rooted trees, with a particular interest in non-contracting groups and rigid kernels.</p>
+        <p class="eyebrow"><span class="status-dot"></span> National Postdoctoral Fellow · IISER Mohali</p>
+        <h1 id="profile-name">Sagar <em>Saha.</em></h1>
+        <p class="hero-lead">Exploring the structure<br>of infinite groups.</p>
+        <p class="intro">My research lies in combinatorial and geometric group theory, with a focus on branch groups and groups acting on rooted trees.</p>
+        <p class="appointment">Working with <strong>Prof. Mahender Singh</strong><br>at IISER Mohali since September 2026.</p>
         <div class="academic-links">
-          <a href="mailto:{{ site.author.email }}">Email</a>
-          <a href="https://orcid.org/0009-0006-9975-1075">ORCID</a>
-          <a href="{{ '/publications.html' | relative_url }}">Publications</a>
-          <a href="{{ '/assets/cv.pdf' | relative_url }}">Download CV</a>
+          <a class="button button-primary" href="{{ '/publications.html' | relative_url }}">Explore my research <svg class="link-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4 M4 4h8v8"/></svg></a>
+          <a class="button button-outline" href="{{ '/assets/cv.pdf' | relative_url }}">Download CV <svg class="link-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10 M3 8l5 5 5-5"/></svg></a>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:{{ site.author.email }}">Email</a><span aria-hidden="true">/</span>
+          <a href="https://orcid.org/0009-0006-9975-1075">ORCID</a><span aria-hidden="true">/</span>
+          <a href="https://github.com/sagarsahamath">GitHub</a>
         </div>
       </div>
+      <figure class="portrait-card">
+        <div class="portrait-frame">
+          <img class="profile-photo" src="{{ '/assets/profile.jpg' | relative_url }}" alt="Sagar Saha at his graduation" width="768" height="1024" fetchpriority="high">
+        </div>
+        <figcaption><span>Sagar Saha</span><span>Mathematics · IIT Guwahati</span></figcaption>
+        <span class="portrait-note" aria-hidden="true">Groups. Trees. Structure.</span>
+      </figure>
     </div>
   </section>
-  <section class="home-section" aria-labelledby="recent-work">
-    <p class="eyebrow">Recent work</p>
-    <h2 id="recent-work">Non-contracting branch groups</h2>
-    <p>With K. V. Krishna: <em>A class of non-contracting branch groups with non-torsion rigid kernels</em>, <em>Journal of Algebra</em> 692 (2026), 379–400.</p>
-    <a href="https://arxiv.org/abs/2501.04112">Read the preprint →</a>
+  <section class="research-strip" aria-label="Research interests">
+    <div><span class="eyebrow">Areas of interest</span><span class="research-tag">Branch groups</span><span class="research-tag">Rooted trees</span><span class="research-tag">Self-similar groups</span><span class="research-tag">Automata groups</span></div>
   </section>
+  <section class="home-section" aria-labelledby="selected-publications">
+    <div class="section-heading"><div><p class="eyebrow">Selected work</p><h2 id="selected-publications">Publications</h2></div><a class="text-link" href="{{ '/publications.html' | relative_url }}">All publications <svg class="link-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4 M4 4h8v8"/></svg></a></div>
+    <div class="publication-grid">
+      <article class="publication-card"><div class="publication-meta"><span>Journal of Algebra</span><span>2026</span></div><h3><a href="https://arxiv.org/abs/2501.04112">A class of non-contracting branch groups with non-torsion rigid kernels</a></h3><p>Sagar Saha &amp; K. V. Krishna</p><div class="publication-bottom"><span>692 · 379–400</span><a href="https://arxiv.org/abs/2501.04112">Read preprint <svg class="link-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4 M4 4h8v8"/></svg></a></div></article>
+      <article class="publication-card"><div class="publication-meta"><span>International Journal of Algebra and Computation</span><span>2024</span></div><h3><a href="https://arxiv.org/abs/2311.06393">A branch group in a class of non-contracting weakly regular branch groups</a></h3><p>Sagar Saha &amp; K. V. Krishna</p><div class="publication-bottom"><span>34(6) · 901–918</span><a href="https://arxiv.org/abs/2311.06393">Read preprint <svg class="link-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4 M4 4h8v8"/></svg></a></div></article>
+    </div>
+  </section>
+  <section class="journey-section" aria-labelledby="academic-journey">
+    <div class="journey-inner"><div class="journey-intro"><p class="eyebrow">Academic journey</p><h2 id="academic-journey">Ideas grow<br>through collaboration.</h2><p>From doctoral research at IIT Guwahati to postdoctoral work at IISER.</p><a class="text-link" href="{{ '/about.html' | relative_url }}">More about me <svg class="link-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4 M4 4h8v8"/></svg></a></div>
+    <ol class="timeline"><li><span class="timeline-date">September 2026 — present</span><h3>National Postdoctoral Fellow</h3><p>IISER Mohali · Prof. Mahender Singh</p></li><li><span class="timeline-date">April — September 2026</span><h3>Research Associate</h3><p>IISER Thiruvananthapuram · Prof. Viji Z. Thomas</p></li><li><span class="timeline-date">Completed March 2026</span><h3>PhD in Mathematics</h3><p>IIT Guwahati · Prof. K. V. Krishna</p></li></ol></div>
+  </section>
+  <section class="contact-section"><p class="eyebrow">Get in touch</p><h2>Let’s talk mathematics.</h2><p>For academic enquiries and conversations about group theory.</p><a class="button button-primary" href="mailto:{{ site.author.email }}">{{ site.author.email }} <svg class="link-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4 M4 4h8v8"/></svg></a></section>
 </main>

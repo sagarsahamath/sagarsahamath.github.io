@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title and page.title != 'Home' %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
   <meta name="description" content="{{ page.description | default: site.description | escape }}">
-  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}?v=20261012">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="navbar">
     <nav class="nav-container" aria-label="Main navigation">
-      <a class="site-name" href="{{ '/' | relative_url }}">Sagar Saha</a>
+      <a class="site-name" href="{{ '/' | relative_url }}"><span class="brand-mark" aria-hidden="true">S.</span> Sagar Saha</a>
       <div class="nav-links">
         {% assign links = 'About:/about.html,Research:/research.html,Publications:/publications.html,Activities:/conferences.html,Teaching:/teaching.html,Awards:/achievements.html,CV:/cv.html' | split: ',' %}
         {% for item in links %}{% assign link = item | split: ':' %}
